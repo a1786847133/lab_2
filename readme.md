@@ -1,6 +1,6 @@
 # Seattle public safety narratives on YouTube
 
-I used a simple Selenium + BeautifulSoup crawler to collect YouTube search results for three related queries:
+I collected YouTube search results for three related queries:
 
 - **seattle crime**
 - **seattle safety**
@@ -8,7 +8,7 @@ I used a simple Selenium + BeautifulSoup crawler to collect YouTube search resul
 
 The idea was to see how different wording (“crime” vs “safety” vs “homeless”) changes what shows up on YouTube and what language appears in the snippets.
 
-## What I did (in plain language)
+## What I did
 
 For each search term, I opened the YouTube results page, scrolled several times to load more videos, and extracted basic fields for each video (title, channel name, snippet text, views, upload time, etc.).  
 Then I used the `shortdesc` text to generate word clouds so I could quickly compare what kinds of words dominate each query.
@@ -29,4 +29,17 @@ These differences could be partly driven by YouTube’s ranking system and the k
 ![Seattle crime word cloud](img/seattle-crime.png)
 
 ### Seattle homeless
-![Seattle homeless word cloud](img)
+![Seattle homeless word cloud](img/seattle-homeless.png)
+
+### Seattle safety
+![Seattle safety word cloud](img/seattle-safety.png)
+
+> If the “Seattle safety” image doesn’t show up, double-check that you have **img/seattle-safety.png** (not a .csv).
+
+## Download the CSV results
+
+- [seattle-crime.csv](assets/seattle-crime.csv)
+- [seattle-safety.csv](assets/seattle-safety.csv)
+- [seattle-homeless.csv](assets/seattle-homeless.csv)
+
+(You can open the links above on GitHub and download the files directly.)
