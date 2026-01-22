@@ -1,4 +1,4 @@
-# Seattle public safety narratives on YouTube (word clouds + crawler results)
+# Seattle public safety narratives on YouTube
 
 I used a simple Selenium + BeautifulSoup crawler to collect YouTube search results for three related queries:
 
